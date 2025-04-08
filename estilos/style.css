@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+body {
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000000, #b50015); /* Gradiente de negro a #b50015 */
+    background-attachment: fixed; /* Hace que el fondo sea fijo al hacer scroll */
+    background-size: cover; /* Asegura que el gradiente cubra toda la pantalla */
+    color: #ffffff; /* Texto blanco para contraste */
+}
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000000;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+.main-header .logo h1 {
+    font-size:2.3rem;
+    margin: 0;
+    color: #b50015;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin: 0;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #b50015;
+}
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   filter: brightness(0.5);
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-title{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: black;
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 1.5rem;
+    padding: 0 15px 15px;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+/* Contador animado */
+.counter-section {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    font-size: 2rem;
+}
+
+.counters {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.counter {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+}
+
+.counter .count {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #b50015;
+    display: block;
+}
+
+.counter p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Carrusel*/
+.slider-title{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+.slider-box{
+    width: 100%;
+    margin:30px;
+    overflow: hidden;
+}
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 200%;
+    animation: slide 9s infinite alternate ease-in-out;
+}
+.slider-box li{
+    width: 200%;
+    padding:0;
+    list-style: none;
+    position: relative;
+}
+.texto{
+top:250px;
+color: white;
+}
+.texto h2{
+    font-size: 45px;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+.slider-box img{
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    text-align: center;
+    padding: 50px;
+    }
+
+.newsletter-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff3333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: ff3333;
+}
+
+/* Social Links */
+.social-links {
+    text-align: center; /* Centra el título */
+}
+
+.social-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.links-container {
+    display: flex; /* Alinea los enlaces en fila */
+    justify-content: center;
+    gap: 10px; /* Espacio entre enlaces */
+}
+
+.social-links a {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+.social-links a:hover {
+    color: #ff5733;
+}
+
+footer p{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: white;
+    padding: 20px;
+}
+/* Iframe */
+.iframe-container {
+    position: relative;
+    width: 45%; 
+    padding-top: 20%; 
+    margin: 0 auto; 
+
+}
+.iframe-title{
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
