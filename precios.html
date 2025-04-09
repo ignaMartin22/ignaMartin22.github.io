@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/clases.css">
+    <link rel="stylesheet" href="estilos/precios.css">
     <title>Élite Fitness Club</title>
 </head>
 
@@ -17,15 +17,81 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="/clases.html">Clases</a></li>
-                <li><a href="#entrenadores">Entrenadores</a></li>
-                <li><a href="#precios">Precios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="/entrenadores.html">Entrenadores</a></li>
+                <li><a href="/precios.html">Precios</a></li>
+                <li><a href="/formulario.html">Contacto</a></li>
+                <li><a href="/blog.html">Blog de Fitness</a></li>
             </ul>
         </nav>
     </header>
 
-
-
+    <section class="precios">
+        <h2 class="iframe-title">Planes</h2>
+            <input type="radio" name="filtro" id="mensual">
+            <input type="radio" name="filtro" id="anual" checked>     
+            <div class="selector-precio">
+                <label for="mensual">Mensual</label>
+                <label for="anual">Anual</label>
+              </div>
+        <div class="planes">
+          <div class="plan">
+            <h3>Plan Básico</h3>
+            <p class="precio">
+              <span class="mensual">$15.000</span>
+              <span class="anual">$150.000</span>
+            </p>
+            <ul>
+              <li>
+                Musculación básica - Crossfit
+                <span class="tooltip"> Con profesor Juan y Matías </span>
+              </li>
+              <li>
+                Acceso a todas las instalaciones 3 días
+                <span class="tooltip">Incluye feriados</span>
+              </li>
+            </ul>
+            <button>Elegir</button>
+          </div>
+    
+          <div class="plan destacado">
+            <h3>Plan Pro</h3>
+            <p class="precio">
+              <span class="mensual">$20.000</span>
+              <span class="anual">$180.000</span>
+            </p>
+            <ul>
+              <li>
+                Cualquier clase que elijas
+                <span class="tooltip">Sin límite de horario</span>
+              </li>
+              <li>
+                Acceso ilimitado a todas las instalaciones los 5 días
+                <span class="tooltip">Entrenador a elección</span>
+              </li>
+            </ul>
+            <button>Elegir</button>
+          </div>
+    
+          <div class="plan">
+            <h3>Plan Gymrat</h3>
+            <p class="precio">
+              <span class="mensual">$50.000</span>
+              <span class="anual">$450.000</span>
+            </p>
+            <ul>
+              <li>
+                Personal trainer
+                <span class="tooltip">Incluye nutricionista</span>
+              </li>
+              <li>
+                Acceso ilimitado a todas las instalaciones los 7 días
+                <span class="tooltip">Incluye promociones en productos</span>
+              </li>
+            </ul>
+            <button>Elegir</button>
+          </div>
+        </div>
+      </section>
     
     <footer>
 
