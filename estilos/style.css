@@ -13,6 +13,7 @@ body {
     background-attachment: fixed; /* Hace que el fondo sea fijo al hacer scroll */
     background-size: cover; /* Asegura que el gradiente cubra toda la pantalla */
     color: #ffffff; /* Texto blanco para contraste */
+    overflow-x: hidden;
 }
 /* Header */
 .main-header {
@@ -28,7 +29,8 @@ body {
     z-index: 1000; 
 }
 
-.main-header .logo h1 {
+.main-header .logo h1 a{
+    text-decoration: none;
     font-size:2.3rem;
     margin: 0;
     color: #b50015;
@@ -296,8 +298,8 @@ footer p{
 /* Iframe */
 .iframe-container {
     position: relative;
-    width: 45%; 
-    padding-top: 20%; 
+    width: 35%; 
+    padding-top: 10%; 
     margin: 0 auto; 
 
 }
