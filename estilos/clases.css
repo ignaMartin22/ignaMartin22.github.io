@@ -1,41 +1,106 @@
 /* Sección de Clases */
-.classes-section {
-    padding: 50px 20px;
-    text-align: center;
-}
 
-.filters {
-    margin-bottom: 20px;
+.classes-section #classes-title{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+    color: #fdf9f9;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.classes-section {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 700px ;
+    margin: auto;
 }
 
-.filters label {
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.filters input {
+/* Ocultar los radios */
+.classes-section input[type="radio"] {
     display: none;
 }
 
-.classes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+/* Estilo general para las etiquetas */
+.classes-section label {
+    padding: 0.5rem 1.2rem;
+    background-color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
 }
 
-.class-card {
-    background-color: black;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+/* Efecto al pasar el mouse */
+.classes-section label:hover {
+    background-color: red;
+}
+
+#classes-container {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
     padding: 20px;
+}
+
+.card {
+    display: none; 
+    background-color: white;
+    border: 3px solid #f45;
+    border-radius: 10px;
+    padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.class-card:hover {
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card:hover {
+    border: 6px solid rgb(255, 0, 21);
     transform: translateY(-10px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
+
+#todo:checked ~ #classes-container .card {
+    display: block;
+}
+#yoga:checked ~ #classes-container  .yoga {
+    display: block;
+}
+#zumba:checked ~ #classes-container .zumba {
+    display: block;
+}
+#musculacion:checked ~ #classes-container .musculacion {
+    display: block;
+}
+#crossfit:checked ~ #classes-container .crossfit {
+    display: block;
+}
+
