@@ -1,0 +1,158 @@
+.precios {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.selector-precio {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.precios input[type="radio"] {
+  display: none;
+}
+.selector-precio label {
+  font-size: 1.5rem;
+  padding: 10px 25px;
+  margin:10px;
+  border-radius: 25px;
+  background-color: var(--color-fondo);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  color: var(--color-texto);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#mensual:checked ~ .selector-precio label[for="mensual"] ,
+#anual:checked ~ .selector-precio label[for="anual"] {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.precios h2 {
+  margin-top: 20px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .toggle {
+    margin-bottom: 30px;
+  }
+  
+  .etiqueta {
+    cursor: pointer;
+    background: #b50015;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background 0.3s ease;
+  }
+  
+  .toggle input[type="radio"] {
+    display: none;
+  }
+  
+  .planes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .plan {
+    background: var(--color-tarjeta);
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border:3px solid #900013;
+  }
+  
+  .plan.destacado {
+    border: 2px solid #b50015;
+  }
+  
+  .plan h3 {
+    margin-bottom: 10px;
+    color: var(--color-texto);
+  }
+  
+  .precio {
+    color: var(--color-texto);
+    font-size: 2rem;
+    margin: 10px 0;
+    position: relative;
+  }
+  
+  .precio .anual {
+    display: none;
+  }
+  
+  .precios #mensual:checked ~ .planes .precio .mensual {
+    display: inline;
+  }
+  .precios #anual:checked ~ .planes .precio .mensual {
+    display: none;
+  }
+
+  .precios #anual:checked ~ .planes .precio .anual {
+    display: inline;
+  }
+  
+  .plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+ .plan li {
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: var(--color-texto);
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    background: var(--color-tarjeta);
+    color: var(--color-texto);
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    position: static;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+  }
+  
+  li:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  button {
+    background: #b50015;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #900013;
+  }

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/clases.css">
+    <title>Élite Fitness Club</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <h1> <a href="index.html"> Élite Fitness Club </a></h1>
+        </div>
+        <button id="darkModeToggle" class="dark-toggle" aria-label="Cambiar modo">🌓</button>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/clases.html">Clases</a></li>
+                <li><a href="/entrenadores.html">Entrenadores</a></li>
+                <li><a href="/precios.html">Precios</a></li>
+                <li><a href="/formulario.html">Contacto</a></li>
+                <li><a href="/blog.html">Blog de Fitness</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <section class="classes-section">
+        <h2 id="classes-title">Conocé todas nuestras clases acá !</h2>
+        <input type="radio" name="filtro" id="todo" checked>
+        <label for="todo">Todas</label>
+        <input type="radio" name="filtro" id="yoga">
+        <label for="yoga">Yoga</label>
+        <input type="radio" name="filtro" id="zumba">
+        <label for="zumba">Zumba</label>
+        <input type="radio" name="filtro" id="musculacion">
+        <label for="musculacion">Musculación</label>
+        <input type="radio" name="filtro" id="crossfit">
+        <label for="crossfit">CrossFit</label>
+
+        <div id="classes-container">
+            <div class="card yoga">
+                <img src="asssets/yoga.jpg" alt="Clase de Yoga">
+                <div class="card-content">
+                    <h3>Yoga</h3>
+                    <p>Relájate y mejora tu flexibilidad con nuestras clases de yoga.</p>
+                </div>
+            </div>
+            <div class="card musculacion">
+                <img src="asssets/musculacion.jpg" alt="Clase de Musculación">
+                <div class="card-content">
+                    <h3>Musculación</h3>
+                    <p> Mejorá tu resistencia, postura y tonificación general de tu cuerpo, adaptando
+                        los entrenamientos a tu nivel.</p>
+                </div>
+            </div>
+            <div class="card zumba">
+                <img src="asssets/zumba.jpg" alt="Clase de Zumba">
+                <div class="card-content">
+                    <h3>Zumba</h3>
+                    <p>Diviértete mientras quemas calorías con nuestras clases de zumba.</p>
+                </div>
+            </div>
+            <div class="card crossfit">
+                <img src="asssets/crossfit.jpg" alt="Clase de CrossFit">
+                <div class="card-content">
+                    <h3>CrossFit</h3>
+                    <p>Entrenamientos intensos para mejorar tu fuerza y resistencia.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <h2 id="tabla-title">Horario Semanal</h2>
+
+        <table class="tabla-horario">
+          <thead>
+            <tr>
+              <th>Hora</th>
+              <th>Lunes</th>
+              <th>Martes</th>
+              <th>Miércoles</th>
+              <th>Jueves</th>
+              <th>Viernes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Hora">08:00 - 10:00</td>
+              <td data-label="Lunes">Musculación</td>
+              <td data-label="Martes">Crossfit</td>
+              <td data-label="Miércoles">Yoga</td>
+              <td data-label="Jueves">Crossfit</td>
+              <td data-label="Viernes">Musculación</td>
+            </tr>
+            <tr>
+              <td data-label="Hora">10:00 - 12:00</td>
+              <td data-label="Lunes">Zumba</td>
+              <td data-label="Martes">Funcional</td>
+              <td data-label="Miércoles">Musculación</td>
+              <td data-label="Jueves">Zumba</td>
+              <td data-label="Viernes">Crossfit</td>
+            </tr>
+            <tr>
+              <td data-label="Hora">12:00 - 14:00</td>
+              <td data-label="Lunes">Yoga</td>
+              <td data-label="Martes">Musculación</td>
+              <td data-label="Miércoles">Zumba</td>
+              <td data-label="Jueves">Funcional</td>
+              <td data-label="Viernes">Yoga</td>
+            </tr>
+            <tr>
+              <td data-label="Hora">14:00 - 16:00</td>
+              <td data-label="Lunes">Crossfit</td>
+              <td data-label="Martes">Yoga</td>
+              <td data-label="Miércoles">Funcional</td>
+              <td data-label="Jueves">Musculación</td>
+              <td data-label="Viernes">Zumba</td>
+              </tr>
+            <tr>
+                <td data-label="Hora">16:00 - 18:00</td>
+                <td data-label="Lunes">Funcional</td>
+                <td data-label="Martes">Zumba</td>
+                <td data-label="Miércoles">Crossfit</td>
+                <td data-label="Jueves">Yoga</td>
+                <td data-label="Viernes">Funcional</td>
+                </tr>
+            <tr>
+                <td data-label="Hora">18:00 - 22:00</td>
+                <td data-label="Lunes">Musculación</td>
+                <td data-label="Martes">Crossfit</td>
+                <td data-label="Miércoles">Yoga</td>
+                <td data-label="Jueves">Zumba</td>
+                <td data-label="Viernes">Musculación</td>
+          </tbody>
+        </table>
+      
+    </section>
+
+    <footer>
+        <h2 class="iframe-title">¿Dónde encontrarnos?</h2>
+        <div class="iframe-container">
+          <iframe class="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d454.96316404147143!2d-65.31011081831684!3d-24.182065597958857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f59c59c6923%3A0xd1bf61d4feca2399!2sElite%20Fitness%20Club!5e0!3m2!1ses!2sar!4v1743627790796!5m2!1ses!2sar"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      
+        <section class="newsletter-section">
+          <h2>Suscribite para recibir todas nuestras noticias!</h2>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Ingresa tu correo electrónico" required>
+            <button type="submit">Suscribirse</button>
+          </form>
+        </section>
+      
+        <div class="social-links">
+          <h3>Síguenos en redes sociales</h3>
+          <div class="links-container">
+            <a href="https://facebook.com" target="_blank" class="social-icon" title="Facebook">
+              <i data-lucide="facebook"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram">
+              <i data-lucide="instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon" title="Twitter">
+              <i data-lucide="twitter"></i>
+            </a>
+          </div>
+        </div>
+      
+        <p class="copyright">
+          &copy; 2025 Ignacio Martín - Todos los derechos reservados.
+        </p>
+      </footer>
+      
+      <!-- Lucide Icon Script -->
+      <script src="https://unpkg.com/lucide@latest"></script>
+      <script>
+        lucide.createIcons();
+      </script>
+       <script>
+        const toggle = document.getElementById("darkModeToggle");
+        toggle.addEventListener("click", () => {
+          document.body.classList.toggle("dark-mode");
+        });
+      </script>
+</body>

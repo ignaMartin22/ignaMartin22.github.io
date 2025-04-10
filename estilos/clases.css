@@ -1,0 +1,175 @@
+/* Sección de Clases */
+
+.classes-section #classes-title{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+    color: var(--color-fondo);
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.classes-section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 700px ;
+    margin: auto;
+}
+
+/* Ocultar los radios */
+.classes-section input[type="radio"] {
+    display: none;
+}
+
+/* Estilo general para las etiquetas */
+.classes-section label {
+    padding: 0.5rem 1.2rem;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+}
+
+/* Efecto al pasar el mouse */
+.classes-section label:hover {
+    background-color: red;
+}
+
+#classes-container {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    display: none; 
+    background-color: var(--color-tarjeta);
+    border: 3px solid #f45;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--color-texto);
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: var(--color-texto);
+}
+
+.card:hover {
+    border: 6px solid rgb(255, 0, 21);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#todo:checked ~ #classes-container .card {
+    display: block;
+}
+#yoga:checked ~ #classes-container  .yoga {
+    display: block;
+}
+#zumba:checked ~ #classes-container .zumba {
+    display: block;
+}
+#musculacion:checked ~ #classes-container .musculacion {
+    display: block;
+}
+#crossfit:checked ~ #classes-container .crossfit {
+    display: block;
+}
+
+#tabla-title{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: var(--color-fondo);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.tabla-horario {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    overflow-x: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+  }
+  .tabla-horario th, .tabla-horario td {
+    border: 1px solid red;
+    background-color: var(--color-tarjeta);
+    color: var(--color-texto);
+    padding: 10px;
+    text-align: center;
+  }
+
+  .tabla-horario th {
+    background-color: var(--color-tarjeta);
+    color: var(--color-texto);
+  }
+
+  @media screen and (max-width: 768px) {
+    .tabla-horario thead {
+      display: none;
+    }
+
+    .tabla-horario, 
+    .tabla-horario tbody, 
+    .tabla-horario tr, 
+    .tabla-horario td {
+      display: block;
+      width: 100%;
+    }
+
+    .tabla-horario tr {
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    .tabla-horario td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+
+    .tabla-horario td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      font-weight: bold;
+      text-align: left;
+    }
+}

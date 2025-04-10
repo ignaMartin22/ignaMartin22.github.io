@@ -1,0 +1,165 @@
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .formulario {
+    margin: 20px auto;
+    background: var(--color-tarjeta);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formulario h2 {
+    color: var(--color-texto);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 15px;
+  }
+  
+  .grid input,
+  .grid textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+  }
+  
+  .grid input:valid,
+  .grid textarea:valid {
+    border-color: #28a745;
+  }
+  
+  .grid input:invalid,
+  .grid textarea:invalid {
+    border-color: #dc3545;
+  }
+  
+ .formulario button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .formulario button:hover {
+    background: #0056b3;
+  }
+  
+  /* Spinner */
+  .spinner {
+    width: 30px;
+    height: 30px;
+    border: 4px solid #ddd;
+    border-top-color: red;
+    border-radius: 50%;
+    animation: spin 1s linear infinite, ocultarSpinner 0.5s linear 2s forwards;
+    margin: 15px auto 0;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes ocultarSpinner {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  /* Modal con :target */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-modal);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal:target {
+    display: flex;
+  }
+  
+  .modal-contenido {
+    background:var(--color-tarjeta);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  .modal .cerrar {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: var(--color-texto);
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .modal .cerrar:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsive */
+  @media (min-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .grid textarea {
+      grid-column: span 2;
+    }
+  }
+  
+.texto-confirmacion {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+    animation: mostrarTexto 0s linear 2s forwards;
+    color: #28a745;
+    padding: 20px;
+}
+
+@keyframes mostrarTexto {
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.texto-enviando {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+    animation: ocultarTexto 0s linear 2s forwards;
+}
+
+@keyframes ocultarTexto {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
