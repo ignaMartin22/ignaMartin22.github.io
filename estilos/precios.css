@@ -17,17 +17,17 @@
   padding: 10px 25px;
   margin:10px;
   border-radius: 25px;
-  background-color: #000000;
+  background-color: #ff0202;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
-  color: #555;
+  color: #000000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#mensual:checked ~ .selector-precio label[for="mensual"],
+#mensual:checked ~ .selector-precio label[for="mensual"] ,
 #anual:checked ~ .selector-precio label[for="anual"] {
-  background-color: #b50015;
+  background-color: rgb(255, 0, 0);
   color: white;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -51,7 +51,7 @@
     transition: background 0.3s ease;
   }
   
-  .toggle input[type="checkbox"] {
+  .toggle input[type="radio"] {
     display: none;
   }
   

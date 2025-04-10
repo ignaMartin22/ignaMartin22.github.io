@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/blog.css">
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/clases.css">
     <title>Élite Fitness Club</title>
 </head>
 
@@ -25,9 +25,92 @@
         </nav>
     </header>
 
+    <section class="filtros">
+        <label for="todos">Todos</label>
+        <label for="entrenamiento">Entrenamiento</label>
+        <label for="nutricion">Nutrición</label>
+        <label for="bienestar">Bienestar</label>
+    </section>
+
+    <section class="newspaper-layout">
+
+        <input type="radio" name="filtro" id="todos" checked>
+        <input type="radio" name="filtro" id="entrenamiento">
+        <input type="radio" name="filtro" id="nutricion">
+        <input type="radio" name="filtro" id="bienestar">
+
+        <article class="main-article entrenamiento-class article-reveal">
+            <h2>Rutina de cuerpo completo</h2>
+            <p>Entrenamiento ideal para realizar en casa sin equipo. Perfecto para empezar el día con energía.</p>
+        </article>
+        <article class="side-article nutricion-class article-reveal">
+            <h3>Alimentación pre-entreno</h3>
+            <p>¿Qué deberías comer antes de entrenar? Tips para rendir al máximo.</p>
+        </article>
+        <article class="side-article entrenamiento-class article-reveal">
+            <h3>HIIT vs Cardio tradicional</h3>
+            <p>Comparativa entre entrenamientos intensivos y cardio clásico.</p>
+        </article>
+        <article class="bottom-article bienestar-class article-reveal">
+            <h3>Descanso y recuperación</h3>
+            <p>La clave para ganar masa muscular y evitar lesiones.</p>
+        </article>
+        <article class="extra-article nutricion-class article-reveal">
+            <h3>Suplementos ¿sí o no?</h3>
+            <p>Una guía rápida para entender cuándo son necesarios y cómo elegirlos.</p>
+        </article>
+
+        <article class="extra-article entrenamiento-class article-reveal">
+            <h3>Entrenamiento funcional</h3>
+            <p>Mejorá tu movilidad, equilibrio y fuerza con ejercicios funcionales.</p>
+        </article>
+
+        <article class="extra-article entrenamiento-class article-reveal">
+            <h3>Top 5 errores al empezar el gym</h3>
+            <p>Consejos para evitar frustraciones y lesiones en tus primeros meses.</p>
+        </article>
+
+        <article class="extra-article nutricion-class article-reveal">
+            <h3>Desayunos fitness</h3>
+            <p>Recetas rápidas, ricas y saludables para arrancar el día con todo.</p>
+        </article>
+
+        <article class="extra-article bienestar-class article-reveal">
+            <h3>Entrená según tu tipo de cuerpo</h3>
+            <p>Conocé tu biotipo y cómo adaptar tu rutina para mejores resultados.</p>
+        </article>
+    </section>
 
 
-    
+    <section class="comentarios">
+        <h2>Comentarios</h2>
+      
+        <div class="comentario">
+          <div class="avatar" data-letra="A"></div>
+          <div class="contenido">
+            <h4>Ana Torres</h4>
+            <p>Me encantó el artículo sobre entrenamiento. Muy útil para arrancar la semana.</p>
+          </div>
+        </div>
+      
+        <div class="comentario">
+          <div class="avatar" data-letra="L"></div>
+          <div class="contenido">
+            <h4>Lucas Ríos</h4>
+            <p>¿Tienen pensado subir más rutinas para principiantes?</p>
+          </div>
+        </div>
+      
+        <div class="comentario">
+          <div class="avatar" data-letra="M"></div>
+          <div class="contenido">
+            <h4>Marina Díaz</h4>
+            <p>Me gustó la sección de nutrición, ¡sigan así!</p>
+          </div>
+        </div>
+      </section>
+      
+
     <footer>
 
         <h2 class="iframe-title">¿Dónde encontrarnos?</h2>
