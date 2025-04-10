@@ -4,7 +4,7 @@
     text-align: center;
     font-size: 2rem;
     margin: 2rem;
-    color: #fdf9f9;
+    color: var(--color-fondo);
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -27,7 +27,8 @@
 /* Estilo general para las etiquetas */
 .classes-section label {
     padding: 0.5rem 1.2rem;
-    background-color: black;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
@@ -49,7 +50,7 @@
 
 .card {
     display: none; 
-    background-color: white;
+    background-color: var(--color-tarjeta);
     border: 3px solid #f45;
     border-radius: 10px;
     padding: 15px;
@@ -74,12 +75,12 @@
 .card-content h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--color-texto);
 }
 
 .card-content p {
     font-size: 1rem;
-    color: #555;
+    color: var(--color-texto);
 }
 
 .card:hover {
@@ -106,7 +107,7 @@
 
 #tabla-title{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: white;
+    color: var(--color-fondo);
     font-size: 2.5rem;
     display: flex;
     justify-content: center;
@@ -125,15 +126,15 @@
   }
   .tabla-horario th, .tabla-horario td {
     border: 1px solid red;
-    background-color: white;
-    color: black;
+    background-color: var(--color-tarjeta);
+    color: var(--color-texto);
     padding: 10px;
     text-align: center;
   }
 
   .tabla-horario th {
-    background-color: black;
-    color: white;
+    background-color: var(--color-tarjeta);
+    color: var(--color-texto);
   }
 
   @media screen and (max-width: 768px) {

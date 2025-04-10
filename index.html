@@ -11,18 +11,28 @@
 <body>
     <header class="main-header">
         <div class="logo">
-            <h1> <a href="index.html"> Élite Fitness Club </a></h1>
+          <h1><a href="index.html">Élite Fitness Club</a></h1>
         </div>
+        <button id="darkModeToggle" class="dark-toggle" aria-label="Cambiar modo">🌓</button>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      
         <nav class="main-nav">
-            <ul>
-                <li><a href="/clases.html">Clases</a></li>
-                <li><a href="/entrenadores.html">Entrenadores</a></li>
-                <li><a href="/precios.html">Precios</a></li>
-                <li><a href="/formulario.html">Contacto</a></li>
-                <li><a href="/blog.html">Blog de Fitness</a></li>
-            </ul>
+          <ul>
+            <li><a href="/clases.html">Clases</a></li>
+            <li><a href="/entrenadores.html">Entrenadores</a></li>
+            <li><a href="/precios.html">Precios</a></li>
+            <li><a href="/formulario.html">Contacto</a></li>
+            <li><a href="/blog.html">Blog de Fitness</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
+      
 
 
     <section class="video-section">
@@ -165,6 +175,12 @@
       <script src="https://unpkg.com/lucide@latest"></script>
       <script>
         lucide.createIcons();
+      </script>
+       <script>
+        const toggle = document.getElementById("darkModeToggle");
+        toggle.addEventListener("click", () => {
+          document.body.classList.toggle("dark-mode");
+        });
       </script>
 </body>
 

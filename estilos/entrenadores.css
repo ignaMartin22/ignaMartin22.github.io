@@ -7,7 +7,7 @@
 }
 #trainers-title{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: white;
+    color:var(--color-fondo) ;
     font-size: 2.5rem;
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@
   }
   
   .flip-card-front {
-    background-color: #fff;
+    background-color: var(--color-fondo);
   }
   
   .flip-card-front img {
@@ -60,8 +60,8 @@
   }
   
   .flip-card-back {
-    background-color: black;
-    color: white;
+    background-color: var(--color-tarjeta);
+    color: var(--color-texto);
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@
   .skill-bar-fill {
     height: 20px;
     line-height: 20px;
-    color: white;
+    color: var(--color-texto);
     text-align: center;
     background: linear-gradient(to right, #4caf50, #81c784);
     width: 0;

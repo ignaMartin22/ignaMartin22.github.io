@@ -13,6 +13,7 @@
         <div class="logo">
             <h1> <a href="index.html"> Élite Fitness Club </a></h1>
         </div>
+        <button id="darkModeToggle" class="dark-toggle" aria-label="Cambiar modo">🌓</button>
         <nav class="main-nav">
             <ul>
                 <li><a href="/clases.html">Clases</a></li>
@@ -123,7 +124,7 @@
             </div>
     
             <div class="skill-bar">
-              <div class="skill-bar-fill" style="--percent: 60%;">Flexibilidad 60%</div>
+              <div class="skill-bar-fill" style="--percent: 80%;">Flexibilidad 80%</div>
             </div>
     
             <div class="stars">
@@ -235,5 +236,11 @@
       <script src="https://unpkg.com/lucide@latest"></script>
       <script>
         lucide.createIcons();
+      </script>
+      <script>
+        const toggle = document.getElementById("darkModeToggle");
+        toggle.addEventListener("click", () => {
+          document.body.classList.toggle("dark-mode");
+        });
       </script>
 </body>

@@ -2,154 +2,175 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/blog.css">
-    <link rel="stylesheet" href="estilos/style.css">
-    <title>Élite Fitness Club</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos/blog.css">
+  <link rel="stylesheet" href="estilos/style.css">
+  <title>Élite Fitness Club</title>
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="logo">
-            <h1> <a href="index.html"> Élite Fitness Club </a></h1>
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="/clases.html">Clases</a></li>
-                <li><a href="/entrenadores.html">Entrenadores</a></li>
-                <li><a href="/precios.html">Precios</a></li>
-                <li><a href="/formulario.html">Contacto</a></li>
-                <li><a href="/blog.html">Blog de Fitness</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="main-header">
+    <div class="logo">
+      <h1> <a href="index.html"> Élite Fitness Club </a></h1>
+    </div>
+    <button id="darkModeToggle" class="dark-toggle" aria-label="Cambiar modo">🌓</button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/clases.html">Clases</a></li>
+        <li><a href="/entrenadores.html">Entrenadores</a></li>
+        <li><a href="/precios.html">Precios</a></li>
+        <li><a href="/formulario.html">Contacto</a></li>
+        <li><a href="/blog.html">Blog de Fitness</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="filtros">
-        <label for="todos">Todos</label>
-        <label for="entrenamiento">Entrenamiento</label>
-        <label for="nutricion">Nutrición</label>
-        <label for="bienestar">Bienestar</label>
+  <section class="filtros">
+    <label for="todos">Todos</label>
+    <label for="entrenamiento">Entrenamiento</label>
+    <label for="nutricion">Nutrición</label>
+    <label for="bienestar">Bienestar</label>
+  </section>
+
+  <section class="newspaper-layout">
+
+    <input type="radio" name="filtro" id="todos" checked>
+    <input type="radio" name="filtro" id="entrenamiento">
+    <input type="radio" name="filtro" id="nutricion">
+    <input type="radio" name="filtro" id="bienestar">
+
+    <article class="main-article entrenamiento-class article-reveal">
+      <h2>Rutina de cuerpo completo</h2>
+      <p>Entrenamiento ideal para realizar en casa sin equipo. Perfecto para empezar el día con energía.</p>
+    </article>
+    <article class="side-article nutricion-class article-reveal">
+      <h3>Alimentación pre-entreno</h3>
+      <p>¿Qué deberías comer antes de entrenar? Tips para rendir al máximo.</p>
+    </article>
+    <article class="side-article entrenamiento-class article-reveal">
+      <h3>HIIT vs Cardio tradicional</h3>
+      <p>Comparativa entre entrenamientos intensivos y cardio clásico.</p>
+    </article>
+    <article class="bottom-article bienestar-class article-reveal">
+      <h3>Descanso y recuperación</h3>
+      <p>La clave para ganar masa muscular y evitar lesiones.</p>
+    </article>
+    <article class="extra-article nutricion-class article-reveal">
+      <h3>Suplementos ¿sí o no?</h3>
+      <p>Una guía rápida para entender cuándo son necesarios y cómo elegirlos.</p>
+    </article>
+
+    <article class="extra-article entrenamiento-class article-reveal">
+      <h3>Entrenamiento funcional</h3>
+      <p>Mejorá tu movilidad, equilibrio y fuerza con ejercicios funcionales.</p>
+    </article>
+
+    <article class="extra-article entrenamiento-class article-reveal">
+      <h3>Top 5 errores al empezar el gym</h3>
+      <p>Consejos para evitar frustraciones y lesiones en tus primeros meses.</p>
+    </article>
+
+    <article class="extra-article nutricion-class article-reveal">
+      <h3>Desayunos fitness</h3>
+      <p>Recetas rápidas, ricas y saludables para arrancar el día con todo.</p>
+    </article>
+
+    <article class="extra-article bienestar-class article-reveal">
+      <h3>Entrená según tu tipo de cuerpo</h3>
+      <p>Conocé tu biotipo y cómo adaptar tu rutina para mejores resultados.</p>
+    </article>
+  </section>
+
+
+  <section class="comentarios">
+    <h2>Comentarios</h2>
+
+    <div class="comentario">
+      <div class="avatar" data-letra="A"></div>
+      <div class="contenido">
+        <h4>Ana Torres</h4>
+        <p>Me encantó el artículo sobre entrenamiento. Muy útil para arrancar la semana.</p>
+      </div>
+    </div>
+
+    <div class="comentario">
+      <div class="avatar" data-letra="L"></div>
+      <div class="contenido">
+        <h4>Lucas Ríos</h4>
+        <p>¿Tienen pensado subir más rutinas para principiantes?</p>
+      </div>
+    </div>
+
+    <div class="comentario">
+      <div class="avatar" data-letra="M"></div>
+      <div class="contenido">
+        <h4>Marina Díaz</h4>
+        <p>Me gustó la sección de nutrición, ¡sigan así!</p>
+      </div>
+    </div>
+    <div class="comentario">
+      <div class="avatar" data-letra="J"></div>
+      <div class="contenido">
+        <h4>José Mamani</h4>
+        <p>Muy interesante la sección de entrenamiento!</p>
+      </div>
+    </div>
+    <div class="comentario">
+      <div class="avatar" data-letra="A"></div>
+      <div class="contenido">
+        <h4>Anahí Carreras</h4>
+        <p>Estudio nutrición y su información me sirvió mucho para un trabajo. Muchas gracias !!</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <h2 class="iframe-title">¿Dónde encontrarnos?</h2>
+    <div class="iframe-container">
+      <iframe class="maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d454.96316404147143!2d-65.31011081831684!3d-24.182065597958857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f59c59c6923%3A0xd1bf61d4feca2399!2sElite%20Fitness%20Club!5e0!3m2!1ses!2sar!4v1743627790796!5m2!1ses!2sar"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <section class="newsletter-section">
+      <h2>Suscribite para recibir todas nuestras noticias!</h2>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Ingresa tu correo electrónico" required>
+        <button type="submit">Suscribirse</button>
+      </form>
     </section>
 
-    <section class="newspaper-layout">
+    <div class="social-links">
+      <h3>Síguenos en redes sociales</h3>
+      <div class="links-container">
+        <a href="https://facebook.com" target="_blank" class="social-icon" title="Facebook">
+          <i data-lucide="facebook"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram">
+          <i data-lucide="instagram"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon" title="Twitter">
+          <i data-lucide="twitter"></i>
+        </a>
+      </div>
+    </div>
 
-        <input type="radio" name="filtro" id="todos" checked>
-        <input type="radio" name="filtro" id="entrenamiento">
-        <input type="radio" name="filtro" id="nutricion">
-        <input type="radio" name="filtro" id="bienestar">
+    <p class="copyright">
+      &copy; 2025 Ignacio Martín - Todos los derechos reservados.
+    </p>
+  </footer>
 
-        <article class="main-article entrenamiento-class article-reveal">
-            <h2>Rutina de cuerpo completo</h2>
-            <p>Entrenamiento ideal para realizar en casa sin equipo. Perfecto para empezar el día con energía.</p>
-        </article>
-        <article class="side-article nutricion-class article-reveal">
-            <h3>Alimentación pre-entreno</h3>
-            <p>¿Qué deberías comer antes de entrenar? Tips para rendir al máximo.</p>
-        </article>
-        <article class="side-article entrenamiento-class article-reveal">
-            <h3>HIIT vs Cardio tradicional</h3>
-            <p>Comparativa entre entrenamientos intensivos y cardio clásico.</p>
-        </article>
-        <article class="bottom-article bienestar-class article-reveal">
-            <h3>Descanso y recuperación</h3>
-            <p>La clave para ganar masa muscular y evitar lesiones.</p>
-        </article>
-        <article class="extra-article nutricion-class article-reveal">
-            <h3>Suplementos ¿sí o no?</h3>
-            <p>Una guía rápida para entender cuándo son necesarios y cómo elegirlos.</p>
-        </article>
-
-        <article class="extra-article entrenamiento-class article-reveal">
-            <h3>Entrenamiento funcional</h3>
-            <p>Mejorá tu movilidad, equilibrio y fuerza con ejercicios funcionales.</p>
-        </article>
-
-        <article class="extra-article entrenamiento-class article-reveal">
-            <h3>Top 5 errores al empezar el gym</h3>
-            <p>Consejos para evitar frustraciones y lesiones en tus primeros meses.</p>
-        </article>
-
-        <article class="extra-article nutricion-class article-reveal">
-            <h3>Desayunos fitness</h3>
-            <p>Recetas rápidas, ricas y saludables para arrancar el día con todo.</p>
-        </article>
-
-        <article class="extra-article bienestar-class article-reveal">
-            <h3>Entrená según tu tipo de cuerpo</h3>
-            <p>Conocé tu biotipo y cómo adaptar tu rutina para mejores resultados.</p>
-        </article>
-    </section>
-
-
-    <section class="comentarios">
-        <h2>Comentarios</h2>
-      
-        <div class="comentario">
-          <div class="avatar" data-letra="A"></div>
-          <div class="contenido">
-            <h4>Ana Torres</h4>
-            <p>Me encantó el artículo sobre entrenamiento. Muy útil para arrancar la semana.</p>
-          </div>
-        </div>
-      
-        <div class="comentario">
-          <div class="avatar" data-letra="L"></div>
-          <div class="contenido">
-            <h4>Lucas Ríos</h4>
-            <p>¿Tienen pensado subir más rutinas para principiantes?</p>
-          </div>
-        </div>
-      
-        <div class="comentario">
-          <div class="avatar" data-letra="M"></div>
-          <div class="contenido">
-            <h4>Marina Díaz</h4>
-            <p>Me gustó la sección de nutrición, ¡sigan así!</p>
-          </div>
-        </div>
-      </section>
-      
-
-      <footer>
-        <h2 class="iframe-title">¿Dónde encontrarnos?</h2>
-        <div class="iframe-container">
-          <iframe class="maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d454.96316404147143!2d-65.31011081831684!3d-24.182065597958857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f59c59c6923%3A0xd1bf61d4feca2399!2sElite%20Fitness%20Club!5e0!3m2!1ses!2sar!4v1743627790796!5m2!1ses!2sar"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      
-        <section class="newsletter-section">
-          <h2>Suscribite para recibir todas nuestras noticias!</h2>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Ingresa tu correo electrónico" required>
-            <button type="submit">Suscribirse</button>
-          </form>
-        </section>
-      
-        <div class="social-links">
-          <h3>Síguenos en redes sociales</h3>
-          <div class="links-container">
-            <a href="https://facebook.com" target="_blank" class="social-icon" title="Facebook">
-              <i data-lucide="facebook"></i>
-            </a>
-            <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram">
-              <i data-lucide="instagram"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" class="social-icon" title="Twitter">
-              <i data-lucide="twitter"></i>
-            </a>
-          </div>
-        </div>
-      
-        <p class="copyright">
-          &copy; 2025 Ignacio Martín - Todos los derechos reservados.
-        </p>
-      </footer>
-      
-      <!-- Lucide Icon Script -->
-      <script src="https://unpkg.com/lucide@latest"></script>
-      <script>
-        lucide.createIcons();
-      </script>
+  <!-- Lucide Icon Script -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script>
+    const toggle = document.getElementById("darkModeToggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
 </body>

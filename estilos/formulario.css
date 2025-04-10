@@ -7,7 +7,7 @@
   
   .formulario {
     margin: 20px auto;
-    background: black;
+    background: var(--color-tarjeta);
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
@@ -16,6 +16,7 @@
   }
   
   .formulario h2 {
+    color: var(--color-texto);
     text-align: center;
     margin-bottom: 20px;
   }
@@ -90,7 +91,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background: var(--color-modal);
     display: none;
     justify-content: center;
     align-items: center;
@@ -101,7 +102,7 @@
   }
   
   .modal-contenido {
-    background:black;
+    background:var(--color-tarjeta);
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -113,7 +114,7 @@
     margin-top: 15px;
     padding: 10px 20px;
     background: #007bff;
-    color: white;
+    color: var(--color-texto);
     text-decoration: none;
     border-radius: 5px;
   }
